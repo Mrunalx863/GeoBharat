@@ -17,7 +17,7 @@ const Menu = () => {
 
                     <div className="card-body items-center">
                         <div role="tablist" className="tabs tabs-bordered w-full ">
-                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Forest Ecology" defaultChecked />
+                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Forest_Ecology" defaultChecked />
                             <div role="tabpanel" className="tab-content py-4">
                                 <ChartWidget />
                             </div>
@@ -27,7 +27,7 @@ const Menu = () => {
                                 name="my_tabs_1"
                                 role="tab"
                                 className="tab"
-                                aria-label="Air Pollution"
+                                aria-label="Air_Pollution"
                             />
                             <div role="tabpanel" className="tab-content py-4"><ChartWidget2 /></div>
 
