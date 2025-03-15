@@ -124,6 +124,40 @@ const Legend = ({ currentLayer }: { currentLayer: BaseLayer }) => {
                     </>
 
                 )}
+                {currentLayer.getClassName() === "aqi" && (
+                    <>
+                        {currentLayer.getVisible() && (
+                            <>
+                                <div className="card-body">
+                                    <div className="flex gap-2">
+                                        <div className="bg-green w-5 h-5"></div>
+                                        <span className="label-text">Good (0-50)</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <div className="bg-yellow w-5 h-5"></div>
+                                        <span className="label-text">Moderate (51-100)</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <div className="bg-orange w-5 h-5"></div>
+                                        <span className="label-text">Unhealthy for Sensitive Groups (101-150)</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <div className="bg-red w-5 h-5"></div>
+                                        <span className="label-text">Unhealthy (151-200)</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <div className="bg-purple w-5 h-5"></div>
+                                        <span className="label-text">Very Unhealthy (201-300)</span>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        <div className="bg-maroon w-5 h-5"></div>
+                                        <span className="label-text">Hazardous (301-500)</span>
+                                    </div>
+                                </div>
+                            </>
+                        )}
+                    </>
+                )}
 
 
 

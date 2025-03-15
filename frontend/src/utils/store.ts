@@ -48,7 +48,7 @@ export default useAppStore;
 
 
 export interface IMergedValue {
-    geom: Array<string>, ndvi: Array<string>, co: Array<string>, precipitation: Array<string>
+    geom: Array<string>, ndvi: Array<string>, co: Array<string>, precipitation: Array<string> , aqi: Array<string> 
 }
 
 
@@ -62,7 +62,8 @@ const useShareStore = create<ShareStoreState>()((set) => ({
         geom: [],
         ndvi: [],
         co: [],
-        precipitation: []
+        precipitation: [],
+        aqi: []
     },
     setMergedValue(mergedValue) {
         set({ mergedValue: mergedValue })
