@@ -53,31 +53,32 @@ const Legend = ({ currentLayer }: { currentLayer: BaseLayer }) => {
                                 <div className="card-body">
                                     <div className="flex gap-2">
                                         <div className="bg-[#800000] w-5 h-5"></div>
-                                        <span className="label-text">Very low or no vegetation</span>
+                                        <span className="label-text"> Desert </span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#A52A2A] w-5 h-5"></div>
-                                        <span className="label-text">Sparse vegetation</span>
+                                        <span className="label-text">Shrubland
+                                        </span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#F5F5DC] w-5 h-5"></div>
-                                        <span className="label-text">Low vegetation</span>
+                                        <span className="label-text">Grassland </span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#FFFF00] w-5 h-5"></div>
-                                        <span className="label-text">Moderate vegetation</span>
+                                        <span className="label-text">Open Forest </span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#7FFF00] w-5 h-5"></div>
-                                        <span className="label-text">Good  vegetation</span>
+                                        <span className="label-text">Moist Deciduous Forest </span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#008000] w-5 h-5"></div>
-                                        <span className="label-text"> Dense vegetation</span>
+                                        <span className="label-text">Evergreen Forest</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="bg-[#006400] w-5 h-5"></div>
-                                        <span className="label-text"> Very dense vegetation</span>
+                                        <span className="label-text">Mangrove Forest </span>
                                     </div>
                                 </div>
                             </>
@@ -92,71 +93,37 @@ const Legend = ({ currentLayer }: { currentLayer: BaseLayer }) => {
                                 <div className="card-body">
                                     <div className="flex gap-2">
                                         <div className="bg-black w-5 h-5"></div>
-                                        <span className="label-text">Lowest concentration</span>
+                                        <span className="label-text">Poorly Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:blue] w-5 h-5"></div>
-                                        <span className="label-text"> Low concentration</span>
+                                        <span className="label-text"> Low Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:purple] w-5 h-5"></div>
-                                        <span className="label-text">Moderate concentration</span>
+                                        <span className="label-text">Moderate Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:Cyan] w-5 h-5"></div>
-                                        <span className="label-text">Higher concentration</span>
+                                        <span className="label-text">Higher Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:Green] w-5 h-5"></div>
-                                        <span className="label-text"> High concentration</span>
+                                        <span className="label-text"> High Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:yellow] w-5 h-5"></div>
-                                        <span className="label-text"> Very high concentration</span>
+                                        <span className="label-text"> Very high Polluted</span>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="[background-color:red] w-5 h-5"></div>
-                                        <span className="label-text"> Highest concentration</span>
+                                        <span className="label-text"> Highest Polluted</span>
                                     </div>
                                 </div>
                             </>
                         )}
                     </>
 
-                )}
-                {currentLayer.getClassName() === "aqi" && (
-                    <>
-                        {currentLayer.getVisible() && (
-                            <>
-                                <div className="card-body">
-                                    <div className="flex gap-2">
-                                        <div className="bg-green w-5 h-5"></div>
-                                        <span className="label-text">Good (0-50)</span>
-                                    </div>
-                                    <div className="flex gap-2">
-                                        <div className="bg-yellow w-5 h-5"></div>
-                                        <span className="label-text">Moderate (51-100)</span>
-                                    </div>
-                                    <div className="flex gap-2">
-                                        <div className="bg-orange w-5 h-5"></div>
-                                        <span className="label-text">Unhealthy for Sensitive Groups (101-150)</span>
-                                    </div>
-                                    <div className="flex gap-2">
-                                        <div className="bg-red w-5 h-5"></div>
-                                        <span className="label-text">Unhealthy (151-200)</span>
-                                    </div>
-                                    <div className="flex gap-2">
-                                        <div className="bg-purple w-5 h-5"></div>
-                                        <span className="label-text">Very Unhealthy (201-300)</span>
-                                    </div>
-                                    <div className="flex gap-2">
-                                        <div className="bg-maroon w-5 h-5"></div>
-                                        <span className="label-text">Hazardous (301-500)</span>
-                                    </div>
-                                </div>
-                            </>
-                        )}
-                    </>
                 )}
 
 

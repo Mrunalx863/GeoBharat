@@ -17,7 +17,7 @@ const Menu = () => {
 
                     <div className="card-body items-center">
                         <div role="tablist" className="tabs tabs-bordered w-full ">
-                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="NDVI" defaultChecked />
+                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Forest Ecology" defaultChecked />
                             <div role="tabpanel" className="tab-content py-4">
                                 <ChartWidget />
                             </div>
@@ -27,11 +27,11 @@ const Menu = () => {
                                 name="my_tabs_1"
                                 role="tab"
                                 className="tab"
-                                aria-label="C0"
+                                aria-label="Air Pollution"
                             />
                             <div role="tabpanel" className="tab-content py-4"><ChartWidget2 /></div>
 
-                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Precipitation" />
+                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="Rainfall" />
                             <div role="tabpanel" className="tab-content py-4"><ChartWidget3 /></div>
 
                             <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="AQI" />
@@ -43,7 +43,7 @@ const Menu = () => {
                             <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="NO₂" />
                             <div role="tabpanel" className="tab-content py-4"><ChartWidgetNo2 /></div>
 
-                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="O₃" />
+                            <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="O3" />
                             <div role="tabpanel" className="tab-content py-4"><ChartWidgetO3 /></div>
 
                         </div>
