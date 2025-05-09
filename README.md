@@ -51,7 +51,7 @@ Users can draw custom polygons on the map to visualize and analyze various envir
 ### 1. Clone the Repository
 git clone https://github.com/your-org/geobharat.git
 cd geobharat
-
+```
 
 
 
@@ -108,6 +108,5 @@ This project was developed as part of the **WCE Hackathon 2025** by Team **MetaM
 
 ---
 Feel free to contribute, raise issues, or suggest improvements!
-```
 
 
