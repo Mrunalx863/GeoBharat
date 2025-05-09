@@ -49,7 +49,7 @@ Users can draw custom polygons on the map to visualize and analyze various envir
 - Git
 
 ### 1. Clone the Repository
-git clone https://github.com/your-org/geobharat.git
+git clone https://github.com/Mrunalx863/GeoBharat.git
 cd geobharat
 ```
 
