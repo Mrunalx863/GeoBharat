@@ -1,52 +1,60 @@
 ```markdown
-# GeoBharat - GIS-Based Appllication
+# GeoBharat – GIS-Based Application
 
 ## Problem Statement
 A GIS-based web dashboard is required to visualize and analyze demographic, socio-economic, and environmental data across India. The platform should:
 - Aggregate data from multiple publicly available sources.
 - Provide an interactive map with customizable data layers (pollution, temperature, demographics, etc.).
 - Allow users to analyze trends over time.
-- Enable exporting and sharing of map views in image format for reporting and collaboration.
+- Enable exporting and sharing of map views for reporting and collaboration.
 
 ## Solution Overview
-We developed a solution using **React** and **OpenLayers** for the frontend, and **Node.js (Express.js), FastAPI, and Google Earth Engine** for the backend. The platform allows users to draw custom polygons on the map to visualize and analyze various environmental and socio-economic factors.
+GeoBharat is a full-stack GIS dashboard built using React.js + OpenLayers for the frontend and Python (FastAPI + Google Earth Engine) for the backend.
+
+Users can draw custom polygons on the map to visualize and analyze various environmental and socio-economic parameters across India.
 
 ## Key Features
-- **Interactive Map**: Users can draw polygons to analyze selected parameters.
-- **Data Layers**: The dashboard supports six key environmental parameters:
+- Interactive Map with polygon drawing and selection
+- Dynamic Data Layers including:
   1. Forest Ecology
   2. Air Pollution
   3. Rainfall
   4. AQI (Air Quality Index)
   5. NO₂ (Nitrogen Dioxide)
   6. O₃ (Ozone)
-- **Yearly Analysis**: Users can select specific years for historical data visualization.
-- **Graphical Representation**: The system generates visual analytics based on selected parameters.
-- **Export & Share**: Users can export map views in image format for reporting and collaboration.
+- Historical Analysis: Choose specific years to compare trends over time
+- Graphical Insights: Real-time visual analytics from selected data
+- Export & Share: Map views exportable as images for reports and presentations
 
 ## Tech Stack
+
 ### Frontend:
-- **React.js**
-- **OpenLayers** (for interactive mapping)
+- React.js (with Vite)
+- OpenLayers (for interactive maps)
+- Zustand (state management)
+- Chart.js (visualizations)
+- Axios (API calls)
 
 ### Backend:
-- **Node.js (Express.js)** (for handling API requests)
-- **FastAPI** (for geospatial data processing)
-- **Python**
-- **Google Earth Engine** (for geospatial data analysis)
+- Python 3
+- FastAPI (for REST APIs)
+- Google Earth Engine (for satellite/environmental data)
+- Uvicorn (ASGI server)
 
 ## Installation & Setup
+
 ### Prerequisites:
 - Node.js (for frontend)
-- Python 3+ (for backend)
+- Python 3.8+ (for backend)
+- Git
 
-### Steps:
-#### 1. Clone the Repository
-```
-```sh
- git clone <repo-url>
- cd WCEHackathon2025_MetaMinds_4
-```
+### 1. Clone the Repository
+git clone https://github.com/your-org/geobharat.git
+cd geobharat
+
+
+
+
 #### 2. Frontend Setup
 ```sh
  cd frontend
@@ -55,11 +63,21 @@ We developed a solution using **React** and **OpenLayers** for the frontend, and
 ```
 #### 3. Backend Setup
 ```sh
- cd backend
+cd ../backend
 python -m venv venv
+
+# Activate the virtual environment:
+# On Windows:
 venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
-python main.py
+
+# Start the FastAPI server
+uvicorn main:app --reload
+
 ```
 
 ## Usage
